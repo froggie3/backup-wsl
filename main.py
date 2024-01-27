@@ -107,20 +107,17 @@ if __name__ == "__main__":
     parser.add_argument(
         "-c",
         "--compress",
-        action="store_false",
-        default=False,
+        action="store_true",
         help="compress the archive using zstandard",
     )
     parser.add_argument(
         "--vhdx",
-        action="store_false",
-        default=False,
+        action="store_true",
         help="archive the distribution in vhdx format",
     )
     parser.add_argument(
         "--explorer",
-        action="store_false",
-        default=False,
+        action="store_true",
         help="open the dest folder with explorer.exe after the process",
     )
     parser.add_argument(
